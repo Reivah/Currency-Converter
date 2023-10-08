@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Currency exchange app</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/96270d5280.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-image">
+        <div class="bg-shadow"></div>
+        <div class="main-app">
+         <h1 class="title">Currency Converter</h1>
+         <div class="upper-body">
+             <label for="number">Amount:</label>
+             <input type="number" class="base-amount" value="1">
+             <label for="text">From:</label>
+             <select id="base-currency">
+                 <option value="USD" selected>USD</option>
+                 <option value="EUR">EUR</option>
+                 <option value="PLN">PLN</option>
+                 <option value="GBP">GPB</option>
+                 <option value="JPY">JPY</option>
+                 <option value="RUB">RUB</option>
+             </select>
+         </div>
+             <div class="button-swap">
+                 <button class="swap"><i class="fa-solid fa-arrows-rotate"></i></button>
+             </div>
+             <div class="lower-body">
+                 <label for="number">To:</label>
+                 <select id="target-currency">
+                     <option value="USD">USD</option>
+                     <option value="EUR" selected>EUR</option>
+                     <option value="PLN">PLN</option>
+                     <option value="GBP">GBP</option>
+                     <option value="JPY">JPY</option>
+                     <option value="RUB">RUB</option>
+                 </select>
+                </div>
+                <div class="rate-info">1dolar = 0.98</div>
+                <div class="button-convert">
+                    <button class="btn-convert">Convert</button>
+                </div>
+                <div class="result-box">
+                    <label for="text">Result:</label>
+                    <input type="text" id="result-input" disabled>
+                </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+<html>
