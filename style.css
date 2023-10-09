@@ -30,7 +30,7 @@ body {
 
 .bg-image {
     position: relative;
-    background-image: url(img/stock_1920.jpg);
+    background-image: url(./img/stock_1920.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
